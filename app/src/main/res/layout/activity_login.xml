@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_32"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pwdLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signupUser"
+            style="@style/LoginButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="Login As User"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAdmin"
+            style="@style/LoginButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="Login As Admin"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/signupUser"
+            app:layout_constraintStart_toStartOf="@+id/signupUser"
+            app:layout_constraintTop_toBottomOf="@+id/signupUser" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginTop="@dimen/dimen_32"
+            android:layout_marginEnd="@dimen/dimen_32"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textColor="@color/colorBrownLight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/accountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="Don't have an account?"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/buttonAdmin"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAdmin" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createAccountBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account."
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/accountText"
+            app:layout_constraintStart_toEndOf="@+id/accountText"
+            app:layout_constraintTop_toTopOf="@+id/accountText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

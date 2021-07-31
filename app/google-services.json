@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "804424408571",
+    "project_id": "choirapp-2fac3",
+    "storage_bucket": "choirapp-2fac3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804424408571:android:5603c0f69d775d18c9ff5e",
+        "android_client_info": {
+          "package_name": "com.example.choirapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804424408571-potd61h3dnra3pvs90gn3rtorgop6lhc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8uIYF_Gio73InbNfT0lefJFooS6ugvKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804424408571-potd61h3dnra3pvs90gn3rtorgop6lhc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
