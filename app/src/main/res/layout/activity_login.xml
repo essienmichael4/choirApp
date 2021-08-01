@@ -46,29 +46,28 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/signupUser"
+            android:id="@+id/loginUser"
             style="@style/LoginButtonStyle"
             android:layout_width="0dp"
             android:layout_height="@dimen/dimen_50"
-            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_16"
             android:text="Login As User"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
-            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+            app:layout_constraintTop_toBottomOf="@+id/progress_login" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonAdmin"
+            android:id="@+id/loginAdmin"
             style="@style/LoginButtonStyle"
             android:layout_width="0dp"
             android:layout_height="@dimen/dimen_50"
             android:layout_marginTop="@dimen/dimen_8"
             android:text="Login As Admin"
             android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="@+id/signupUser"
-            app:layout_constraintStart_toStartOf="@+id/signupUser"
-            app:layout_constraintTop_toBottomOf="@+id/signupUser" />
+            app:layout_constraintEnd_toEndOf="@+id/loginUser"
+            app:layout_constraintStart_toStartOf="@+id/loginUser"
+            app:layout_constraintTop_toBottomOf="@+id/loginUser" />
 
         <TextView
             android:id="@+id/textView2"
@@ -93,8 +92,8 @@
             android:text="Don't have an account?"
             android:textAlignment="center"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/buttonAdmin"
-            app:layout_constraintTop_toBottomOf="@+id/buttonAdmin" />
+            app:layout_constraintStart_toStartOf="@+id/loginAdmin"
+            app:layout_constraintTop_toBottomOf="@+id/loginAdmin" />
 
 
         <com.google.android.material.button.MaterialButton
@@ -108,5 +107,17 @@
             app:layout_constraintBottom_toBottomOf="@+id/accountText"
             app:layout_constraintStart_toEndOf="@+id/accountText"
             app:layout_constraintTop_toTopOf="@+id/accountText" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_login"
+            style="@style/Widget.MaterialComponents.CircularProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
