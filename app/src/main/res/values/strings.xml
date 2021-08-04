@@ -3,4 +3,8 @@
     <string name="password">password</string>
     <string name="email">Email</string>
     <string name="fullname">Fullname</string>
+    <string name="composer">Composer Name</string>
+    <string name="song_name">Title</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="save">Save</string>
 </resources>
